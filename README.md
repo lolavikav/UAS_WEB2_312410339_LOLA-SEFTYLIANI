@@ -30,7 +30,8 @@ Aplikasi ini dirancang dengan menerapkan arsitektur terpisah (Decoupled Architec
 <img width="768" height="457" alt="image" src="https://github.com/user-attachments/assets/bf763f37-93ce-4ae0-8e56-6fff8f821faa" />
 
 7. Halaman Edit Buku
-<img width="842" height="415" alt="image" src="https://github.com/user-attachments/assets/e281210a-afb3-46db-a243-20ffa17c6879" />
+<img width="734" height="442" alt="image" src="https://github.com/user-attachments/assets/dc31e9b3-d8d3-4c21-8001-e0981d9c428d" />
+
 
 8. Hapus Buku
 <img width="856" height="475" alt="image" src="https://github.com/user-attachments/assets/efb4bdd9-d8e8-4fc4-9fe6-21b89c0a696e" />
@@ -43,7 +44,8 @@ Aplikasi ini dirancang dengan menerapkan arsitektur terpisah (Decoupled Architec
     <img width="763" height="392" alt="image" src="https://github.com/user-attachments/assets/50495887-1af7-4d5b-bfb1-0147d2799aa8" />
 
 11. Halaman Katalog Admin
-   <img width="901" height="472" alt="image" src="https://github.com/user-attachments/assets/5d817b2d-5683-402d-a120-879dcb0a0cac" />
+   <img width="864" height="424" alt="image" src="https://github.com/user-attachments/assets/48d8b0b3-fda5-4107-a6b0-c854bea29865" />
+
 
 
 
