@@ -1,0 +1,246 @@
+ERROR - 2026-06-22 05:56:45 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bookflow_elibra...', 3306, '', 0)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*...', Array, false)
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\BukuController->index()
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*...', Array, false)
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\BukuController->index()
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#13 {main}
+CRITICAL - 2026-06-22 05:56:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bookflow_elibrary_db'
+[Method: GET, Route: api/buku]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*, `kategori`.`nama_kategori`
+FROM `buku`
+LEFT JOIN `kategori` ON `kategori`.`id` = `buku`.`kategori_id`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xamppvicka\\htdocs\\backend-api\\backend-api\\backend-api\\public\\index.php')
+ERROR - 2026-06-22 05:56:52 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bookflow_elibra...', 3306, '', 0)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*...', Array, false)
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\BukuController->index()
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*...', Array, false)
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\BukuController->index()
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#13 {main}
+CRITICAL - 2026-06-22 05:56:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bookflow_elibrary_db'
+[Method: GET, Route: api/buku]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*, `kategori`.`nama_kategori`
+FROM `buku`
+LEFT JOIN `kategori` ON `kategori`.`id` = `buku`.`kategori_id`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xamppvicka\\htdocs\\backend-api\\backend-api\\backend-api\\public\\index.php')
+ERROR - 2026-06-22 05:56:52 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bookflow_elibra...', 3306, '', 0)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\KategoriController.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\KategoriController->index()
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\KategoriController.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\KategoriController->index()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#11 {main}
+CRITICAL - 2026-06-22 05:56:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bookflow_elibrary_db'
+[Method: GET, Route: api/kategori]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori`', [], false)
+ 3 APPPATH\Controllers\KategoriController.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KategoriController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xamppvicka\\htdocs\\backend-api\\backend-api\\backend-api\\public\\index.php')
+ERROR - 2026-06-22 05:56:56 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bookflow_elibra...', 3306, '', 0)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\KategoriController.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\KategoriController->index()
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\KategoriController.php(17): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\KategoriController->index()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#11 {main}
+CRITICAL - 2026-06-22 05:56:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bookflow_elibrary_db'
+[Method: GET, Route: api/kategori]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori`', [], false)
+ 3 APPPATH\Controllers\KategoriController.php(17): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\KategoriController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KategoriController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xamppvicka\\htdocs\\backend-api\\backend-api\\backend-api\\public\\index.php')
+ERROR - 2026-06-22 05:56:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'bookflow_elibra...', 3306, '', 0)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*...', Array, false)
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\BukuController->index()
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'bookflow_elibrary_db' in C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*...', Array, false)
+#3 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\app\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+#6 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(974): App\Controllers\BukuController->index()
+#7 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+#8 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\public\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xamppvicka\htdocs\backend-api\backend-api\backend-api\system\rewrite.php(44): require_once('C:\\xamppvicka\\h...')
+#13 {main}
+CRITICAL - 2026-06-22 05:56:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'bookflow_elibrary_db'
+[Method: GET, Route: api/buku]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1647): CodeIgniter\Database\BaseConnection->query('SELECT `buku`.*, `kategori`.`nama_kategori`
+FROM `buku`
+LEFT JOIN `kategori` ON `kategori`.`id` = `buku`.`kategori_id`', [], false)
+ 3 SYSTEMPATH\Model.php(255): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\BukuController.php(33): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 8 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xamppvicka\\htdocs\\backend-api\\backend-api\\backend-api\\public\\index.php')

@@ -1,0 +1,65 @@
+CRITICAL - 2026-06-18 03:01:29 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: PUT, Route: api/buku/22]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\BukuController.php(101): CodeIgniter\Model->update('22', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->update('22')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 03:38:17 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: PUT, Route: api/buku/23]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\BukuController.php(101): CodeIgniter\Model->update('23', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->update('23')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 03:38:27 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: PUT, Route: api/buku/23]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\BukuController.php(101): CodeIgniter\Model->update('23', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->update('23')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 03:39:07 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: PUT, Route: api/buku/23]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\BukuController.php(101): CodeIgniter\Model->update('23', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->update('23')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\backend-api\\public\\index.php')
+CRITICAL - 2026-06-18 03:50:11 --> CodeIgniter\Database\Exceptions\DataException: There is no data to update.
+[Method: PUT, Route: api/buku/23]
+in SYSTEMPATH\BaseModel.php on line 1057.
+ 1 SYSTEMPATH\BaseModel.php(1057): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(711): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\BukuController.php(101): CodeIgniter\Model->update('23', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(974): App\Controllers\BukuController->update('23')
+ 5 SYSTEMPATH\CodeIgniter.php(520): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BukuController))
+ 6 SYSTEMPATH\CodeIgniter.php(363): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(71): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\backend-api\\backend-api\\public\\index.php')
