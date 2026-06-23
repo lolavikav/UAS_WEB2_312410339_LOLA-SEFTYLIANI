@@ -36,7 +36,8 @@ Aplikasi ini dirancang dengan menerapkan arsitektur terpisah (Decoupled Architec
 <img width="856" height="475" alt="image" src="https://github.com/user-attachments/assets/efb4bdd9-d8e8-4fc4-9fe6-21b89c0a696e" />
 
 9. Halaman minjam buku
-<img width="843" height="399" alt="image" src="https://github.com/user-attachments/assets/99c38fb6-00ea-4b0b-9bbc-ed71191fcc4b" />
+<img width="836" height="482" alt="image" src="https://github.com/user-attachments/assets/ac5e37ce-4872-4446-8b13-86ad5eeecbd9" />
+
 
 10. Halaman Kategori
     <img width="763" height="392" alt="image" src="https://github.com/user-attachments/assets/50495887-1af7-4d5b-bfb1-0147d2799aa8" />
