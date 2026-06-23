@@ -232,6 +232,7 @@ export default {
 <img width="953" height="395" alt="image" src="https://github.com/user-attachments/assets/01687851-fab9-47e2-b2e8-e5c83e380b42" />
 
 2.Uji keamanan API (Backend)
+<img width="1195" height="878" alt="image" src="https://github.com/user-attachments/assets/244b9760-be15-4b3f-94f2-8f9cc2567249" />
 
 
 3. Halamn Katalog User
